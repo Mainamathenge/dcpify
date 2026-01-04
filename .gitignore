@@ -1,0 +1,16 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+vwen/
+env/
+.venv/
+
+# Project generated output
+output/
+
+# macOS
+.DS_Store

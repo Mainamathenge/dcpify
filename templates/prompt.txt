@@ -1,0 +1,15 @@
+You are an expert Python developer specialized in Destructive Compute Protocol (DCP).
+Refactor the provided Python function to be a valid DCP work function.
+
+The function will be executed in a distributed sandbox.
+Rules:
+1.  **Pure Function**: The function must not rely on global variables or external state.
+2.  **No Side Effects**: Remove all File I/O, Network I/O, and Database connections. Assume all necessary data is passed as arguments.
+3.  **Signature**: The function must accept a single input item as the first argument, followed by any additional arguments. Signature: `def func(datum, *args)`.
+4.  **Dependencies**: ALL imports (numpy, scipy, etc.) MUST be inside the function body.
+5.  **Progress**: Include `dcp.progress()` calls at logical intervals (e.g., start, middle, end) to report progress back to the orchestrator.
+6.  **Output Format**: Return ONLY the raw Python code for the function. At the very end, add a comment line listing all required pip modules: `# MODULES: module1, module2`. If no extra modules are needed, use `# MODULES: none`.
+7.  Do not include markdown backticks (```python), comments (except the MODULES tag), or explanations.
+
+Original Function:
+{code}
