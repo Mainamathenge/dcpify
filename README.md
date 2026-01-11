@@ -23,10 +23,10 @@ It bridges the gap between local development and distributed computing by automa
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd dcipify
+cd dcipfy
 
 # Install dependencies
-pip install dcp-client
+pip install dcp
 ```
 
 ### 2. Configuration
