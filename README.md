@@ -11,11 +11,16 @@ It bridges the gap between local development and distributed computing by automa
 - **Convention Driven**: Follows official DCP Python patterns, including `dcp.progress()` reporting and integrated dependency handling.
 
 ## Prerequisites
-1. **DCP Identity**: You need an `id.keystore` file.
-   - Register at [DCP Portal](https://portal.dcp.live).
-   - Export your keystore and place it in `~/.dcp/id.keystore`.
-2. **Gemini API Key**: Get a key from [Google AI Studio](https://aistudio.google.com/).
-3. **Python 3.10+**
+1. **DCP Identity**: You need the following keystore files in your `~/.dcp/` directory:
+   - `id.keystore` (Primary identity)
+   - `default.keystore` (Default compute group account)
+   - Register at [DCP Portal](https://portal.dcp.live) to export these.
+2. **Node.js**: Required for the DCP runtime.
+3. **DCP Packages**:
+   - For Python jobs: `pip install dcp-client` or `pip install dcp`
+   - For Node.js jobs: `npm i dcp-client`
+4. **Gemini API Key**: Get a key from [Google AI Studio](https://aistudio.google.com/).
+5. **Python 3.10+**
 
 ## Quick Start
 
@@ -23,7 +28,7 @@ It bridges the gap between local development and distributed computing by automa
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd dcipify
+cd dcpify
 
 # Install dependencies
 pip install dcp-client
@@ -67,4 +72,4 @@ python3 job.py
 - **SSL Verification**: The tool includes a workaround for environment-specific SSL certificate issues.
 - **Rate Limits**: Includes a 1s delay between API calls to accommodate Gemini free-tier quotas.
 - **Manual Verification**: Always review generated code in `output/dcp/work/` before execution.
-# dcipfy
+# dcpify

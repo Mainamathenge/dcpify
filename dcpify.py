@@ -18,13 +18,14 @@ DCP_SETUP_INSTRUCTIONS = """
 ==================================================
 To run distributed jobs, you must have a DCP Identity.
 
-1. GET KEYSTORE: Log in to the DCP Portal and export your 'id.keystore'.
-2. PLACEMENT:   Move it to: {keystore_path}
-3. PERMISSIONS: Ensure secure permissions:
-                chmod 600 {keystore_path}
-4. INSTALL:     pip install dcp-client
+1. GET KEYSTORES: Log in to the DCP Portal and export your 'id.keystore' and 'default.keystore'.
+2. PLACEMENT:    Move them to: ~/.dcp/
+3. PERMISSIONS:  Ensure secure permissions:
+                 chmod 600 ~/.dcp/*.keystore
+4. INSTALL:      pip install dcp-client
+                 npm i dcp-client (if using node components)
 
-The tool will exit now until the keystore is configured.
+The tool will exit now until the keystores are configured.
 ==================================================
 """
 
