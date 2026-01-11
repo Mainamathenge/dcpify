@@ -67,4 +67,3 @@ python3 job.py
 - **SSL Verification**: The tool includes a workaround for environment-specific SSL certificate issues.
 - **Rate Limits**: Includes a 1s delay between API calls to accommodate Gemini free-tier quotas.
 - **Manual Verification**: Always review generated code in `output/dcp/work/` before execution.
-# dcipfy
